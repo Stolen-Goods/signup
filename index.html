@@ -19,24 +19,28 @@
             <br>
             <h2>You <em>know</em> you want to.</h2>
         </div>
-        <form>
-            <h2>Let's do this!</h2>
-            <label for="first-name">First Name</label>
-            <input placeholder="Thor" type="text" id="first-name" name="first-name">
-            <label for="last-name">Last Name</label>
-            <input placeholder="Odinson" type="text" name="last-name" id="last-name">
-            <label for="email">Email</label>
-            <input placeholder="Thor@odin.com" type="email" name="email" id="email">
-            <label for="phone-number">Phone Number</label>
-            <input placeholder="123-456-7890" type="tel" name="phone-number" id="phone-number">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <label for="password-confirm">Confirm Password</label>
-            <input type="password" name="password" id="password-confirm">
+        <h2 class="form">Let's do this!</h2>
+        <form class="form">
+            <div class="col-1">
+                <label for="first-name">First Name</label>
+                <input placeholder="Thor" type="text" id="first-name" name="first-name">
+                <label for="email">Email</label>
+                <input placeholder="Thor@odin.com" type="email" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" minlength="8" maxlength="12" name="password" id="password">
+            </div>
+            <div class="col-2">
+                <label for="last-name">Last Name</label>
+                <input placeholder="Odinson" type="text" name="last-name" id="last-name">
+                <label for="phone-number">Phone Number</label>
+                <input placeholder="123-456-7890" type="tel" name="phone-number" id="phone-number">
+                <label for="password-confirm">Confirm Password</label>
+                <input type="password" minlength="8" maxlength="12" name="password" id="password-confirm">
+            </div>
         </form>
-        <div>
+        <div class="submit">
             <button type="submit">Create Account</button>
-            <h4>Already have an account? Log in</h4>
+            <h4>Already have an account? <span>Log in</span></h4>
         </div>
     </main> 
 </body>
